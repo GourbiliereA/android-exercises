@@ -6,4 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".Library">
 
+    <TextView
+        android:id="@+id/buttonLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="@string/left_text"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/buttonRightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:layout_gravity="right"
+        android:text="@string/right_text"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/buttonBelowLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:layout_below="@id/buttonLeftText"
+        android:text="@string/below_left_text"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/buttonCenterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/indigo"
+        android:text="@string/center_text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/buttonAboveBottomCenterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="@string/above_bottom_center_text"
+        android:layout_above="@id/buttonBottomCenterText"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/buttonBottomCenterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/indigo"
+        android:text="@string/bottom_center_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"/>
 </RelativeLayout>
