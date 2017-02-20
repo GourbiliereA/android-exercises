@@ -12,17 +12,20 @@
         android:layout_height="wrap_content"
         android:background="@color/red"
         android:text="@string/left_text"
-        android:layout_alignParentRight="true"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
 
     <TextView
         android:id="@+id/buttonRightText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/red"
-        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
         android:text="@string/right_text"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"/>
 
     <TextView
         android:id="@+id/buttonBelowLeftText"
@@ -31,7 +34,8 @@
         android:background="@color/purple"
         android:layout_below="@id/buttonLeftText"
         android:text="@string/below_left_text"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"/>
 
     <TextView
         android:id="@+id/buttonCenterText"
