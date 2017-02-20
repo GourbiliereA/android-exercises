@@ -29,13 +29,16 @@
 
     <TextView
         android:id="@+id/buttonBelowLeftText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple"
         android:layout_below="@id/buttonLeftText"
         android:text="@string/below_left_text"
         android:padding="10dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/buttonRightText"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/buttonCenterText"
@@ -43,9 +46,11 @@
         android:layout_height="wrap_content"
         android:background="@color/indigo"
         android:text="@string/center_text"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"/>
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_alignLeft="@id/buttonAboveBottomCenterText"
+        android:layout_alignRight="@id/buttonAboveBottomCenterText"/>
 
     <TextView
         android:id="@+id/buttonAboveBottomCenterText"
@@ -55,7 +60,7 @@
         android:text="@string/above_bottom_center_text"
         android:layout_above="@id/buttonBottomCenterText"
         android:layout_centerHorizontal="true"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
     <TextView
         android:id="@+id/buttonBottomCenterText"
