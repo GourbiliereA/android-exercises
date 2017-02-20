@@ -11,6 +11,8 @@ public class LibraryActivity extends AppCompatActivity {
 
     private CheckBox checkBox;
 
+    public String CHECKBOX_STATE = "checkboxState";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class LibraryActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         // TODO save check box state
+//        outState.putBoolean(CHECKBOX_STATE, checkBox.isChecked());
 
         super.onSaveInstanceState(outState);
     }
@@ -33,6 +36,7 @@ public class LibraryActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
 
         // TODO restore check box
+//        checkBox.setChecked(savedInstanceState.getBoolean(CHECKBOX_STATE));
     }
 
     @Override
