@@ -8,8 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class LibraryActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,7 @@ public class LibraryActivity extends AppCompatActivity {
                 // Replace with startActivity() to start BookActivity
                 // Toast.makeText(LibraryActivity.this, R.string.toast_todo, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LibraryActivity.this, BookActivity.class);
+                intent.putExtra("Todo", "Coucou");
                 startActivity(intent);
             }
         });
