@@ -1,6 +1,12 @@
 package fr.android.androidexercises;
 
+import android.support.test.espresso.Espresso;
+import android.support.test.espresso.ViewAction;
+import android.support.test.espresso.action.ViewActions;
+import android.support.test.espresso.assertion.ViewAssertions;
+import android.support.test.espresso.matcher.ViewMatchers;
 import android.test.ActivityInstrumentationTestCase2;
+import android.view.View;
 
 public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginActivity> {
 
@@ -34,4 +40,16 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 //        return activity[0];
 //    }
 
+    public void testLogin() throws Exception {
+
+        Espresso.onView(ViewMatchers.withId(R.id.usernameEdit))
+                .perform(ViewActions.typeText("agourb14"), ViewActions.closeSoftKeyboard());
+
+        Espresso.onView(ViewMatchers.withId(R.id.passwordEdit))
+                .perform(ViewActions.typeText("TestTest"), ViewActions.closeSoftKeyboard());
+
+        Espresso.onView(ViewMatchers.withId(R.id.loginButton)).perform(ViewActions.click());
+
+        Espresso.onView(ViewMatchers.withId(R.id.loggedText)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
+    }
 }
